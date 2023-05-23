@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Aktuelle Datei",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/deepmend",
+            "program": "python/build.py",
+            "env": {
+                "PYTHONPATH": "../fracturing"
+            },
+            "args": [
+                "/home/michael/Projects/test_shapeNet_inference2/ShapeNet/ShapeNetCore.v2/",
+                "/home/michael/Projects/test_shapeNet_inference2/ShapeNet/ShapeNetCore.v2/mugs_split.json",
+                "--train_out", 
+                "/home/michael/Projects/test_shapeNet_inference2/ShapeNet/ShapeNetCore.v2/mugs_train.pkl",
+                "--test_out", 
+                "/home/michael/Projects/test_shapeNet_inference2/ShapeNet/ShapeNetCore.v2/mugs_test.pkl",
+                "--breaks",
+                "1",
+                "--load_models",
+                "--use_spline"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
